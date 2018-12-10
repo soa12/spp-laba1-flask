@@ -1,0 +1,11 @@
+<!doctype html>
+<title>Hello from Flask</title>
+
+{% block body %}
+  <h1> {{ status }}!</h1>
+  <form action="{{ url_for('action') }}" method="GET">
+    <input type="submit" name="submit" value="Hello"/>
+    <input type="submit" name="submit" value="Bye"/>
+  </form>
+  <p><a href="/show-logs">Logs</a></p>
+{% endblock %}

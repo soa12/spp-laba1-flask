@@ -1,0 +1,14 @@
+{% block body %}
+    <h1>Logs</h1>
+    <a href="{{ url_for('index')}}">Back</a>
+    <table>
+        <tr>
+            <th></th>
+        </tr>
+        {% for log in logs %}
+            <tr>
+                <td>{{ log }}</td>
+            </tr>
+        {% endfor %}
+    </table>
+{% endblock %}
